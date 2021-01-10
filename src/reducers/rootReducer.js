@@ -16,14 +16,13 @@ const initState = {
 }
 
 const rootReducer = (state = initState , action) => {
-  console.log(action);
+ ;
 
   if(action.type == "DELETE_POST"){
       //console.log("here I am " + action.id );
 
       let nowPosts = state.posts.filter(p=> p.id != action.id);
-      console.log(state.posts);
-      console.log(nowPosts);
+     
       return {
         ...state,
         posts : nowPosts

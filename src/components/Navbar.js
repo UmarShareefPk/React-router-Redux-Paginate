@@ -23,6 +23,9 @@ export default function Navbar() {
           <li>
             <NavLink to="/Upload" title="">Upload</NavLink>
           </li>
+          <li>
+            <NavLink to="/SignalR" title="">SignalR</NavLink>
+          </li>
         </ul>
       </div>
     </nav>

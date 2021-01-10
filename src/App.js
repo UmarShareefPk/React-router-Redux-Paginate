@@ -7,7 +7,7 @@ import Post from './components/Post';
 import Posts from './components/Pagination/Posts'
 import  Upload from './components/FileUploadDownload/Upload'
 import LayoutTest from './components/LayoutTest';
-
+import SignalR from './components/signalR/SignalR'
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
           <Route exact path="/Posts" component={Posts}></Route>
           <Route exact path="/Upload" component={Upload}></Route>
           <Route exact path="/Layout" component={LayoutTest}></Route>
+          <Route exact path="/SignalR" component={SignalR}></Route>
           <Route exact path="/:post_id" component={Post}></Route>
           
         </Switch>
